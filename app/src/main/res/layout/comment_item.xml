@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/postHeader"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/app_name" />
+
+    <LinearLayout
+        android:id="@+id/headerInfoContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/postsItemMargin" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/commentOwnerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/commentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_settings" />
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/commentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="@string/action_settings" />
+
+    </LinearLayout>
+
+</LinearLayout>

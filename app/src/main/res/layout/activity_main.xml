@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <include xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/DrawerLayout"
+        android:elevation="7sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" >
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </RelativeLayout>
+-->
+        <FrameLayout
+            android:id="@+id/frameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="280sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#ff363535"
+            android:cacheColorHint="@null"
+            android:choiceMode="singleChoice"
+            android:fitsSystemWindows="true"
+            android:divider="@color/grey_separator_side_bar"
+            android:dividerHeight="@dimen/separator_height"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+
+
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

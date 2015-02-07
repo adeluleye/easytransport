@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff" >
+    <!-- android:background="#3b3b3b" >-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+        <!--  View Title Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="Get Price of Taxi"
+            android:gravity="center_horizontal"
+            android:textSize="25dip"
+            android:textStyle="bold" />
+        <!--  RadioName Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:text="Current Location" />
+        <!--  RadioName TextField -->
+        <EditText
+            android:id="@+id/name"
+            android:hint="I am currently at"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!--  RadioUrl Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:text="Intended Destination" />
+        <!--  RadioUrl TextField -->
+        <EditText
+            android:id="@+id/url"
+            android:hint="I am going to"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <!--  Country Label -->
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:text="Radio Country" />
+        <!--  Country TextField -->
+
+
+        <!--  Request Button -->
+        <Button
+            android:id="@+id/register"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:textColor="#fff"
+            android:background="#FF5722"
+            android:text="Get Price" />
+
+        <!--  Error message -->
+        <TextView android:id="@+id/register_error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#e30000"
+            android:padding="10dip"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

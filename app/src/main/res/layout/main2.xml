@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <include xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+
+    <android.support.v4.widget.DrawerLayout
+        android:layout_below="@+id/tool_bar"
+        android:id="@+id/DrawerLayout"
+        android:elevation="7sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+        <ListView
+            android:id="@+id/left_drawer"
+            android:layout_width="280sp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white"
+            android:choiceMode="singleChoice"
+            android:fitsSystemWindows="true"
+            android:divider="@color/drawerListDivider"
+            android:dividerHeight="1dp"
+            android:listSelector="@android:color/transparent"
+            android:scrollbars="none" />
+        <!--android:layout_gravity="start"-->
+
+
+        <!--<TextView
+            android:id="@+id/txtTitle"
+            android:layout_below="@+id/tool_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/TextDimTop"
+            android:gravity="center"
+            android:text="@string/hello_world" />
+-->        <!--<android.support.v7.widget.RecyclerView
+            android:id="@+id/RecyclerView"
+            android:layout_width="280dp"
+            android:background="#ffffff"
+            android:layout_height="match_parent"
+            android:divider="@color/drawerListDivider"
+            android:dividerHeight="1dp"
+            android:layout_gravity="left"
+            android:scrollbars="vertical"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+-->
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

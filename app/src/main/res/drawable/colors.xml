@@ -1,0 +1,51 @@
+<resources>
+
+    <!--
+        Check Android Theme colors for color reference:
+        https://developer.android.com/training/material/images/ThemeColors.png
+
+        Refer also to Color palette for the UI colors you should use:
+        http://www.google.com/design/spec/style/color.html#color-ui-color-palette
+    -->
+
+    <color name="myPrimaryColor">#FF5722</color>
+    <color name="myPrimaryDarkColor">#FF5722</color>
+    <color name="myAccentColor">#FF5722</color>
+    <color name="myDrawerBackground">#fff</color>
+    <color name="myWindowBackground">#DEDEDE</color>
+    <color name="myTextPrimaryColor">#FFFFFF</color>
+    <color name="myNavigationColor">#080707</color>
+
+
+    <color name="white">#ffffff</color>
+    <color name="post_bg">#C9C9C9</color>
+    <color name="posts_item_bg">#ffffff</color>
+    <color name="posts_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="postItemBg">#ffffff</color>
+    <color name="postBg">#E0E0E0</color>
+    <color name="actionBar">#FF5722</color>
+    <color name="postHeaderBg">#ffffff</color>
+    <color name="postOwner">#000000</color>
+    <color name="postPublishDate">#898A8C</color>
+    <color name="postStatus">#8A8A8A</color>
+    <color name="footerText">#535353</color>
+    <color name="postBorder">#E9E9E9</color>
+    <color name="followButton">#FF5722</color>
+    <color name="followButtonPressed">#F06898</color>
+    <color name="contactButton">#055f56</color>
+    <color name="contactButtonPressed">#055f56</color>
+    <color name="profileName">#ffffff</color>
+    <color name="profileJob">#99ffffff</color>
+    <color name="profileAdress">#99ffffff</color>
+    <color name="featuredPhotos">#383838</color>
+    <color name="statusEditTextBorder">#AAAAAA</color>
+    <color name="newStatusHeaderFooter">#EEEEEE</color>
+    <color name="drawerListDivider">#58BA53</color>
+    <color name="drawerListBackground">#FFFFFF</color>
+    <color name="drawerListBackgroundPressed">#FCDCE8</color>
+
+
+    <color name="selected_gray">#ffdbdbdb</color>
+</resources>
