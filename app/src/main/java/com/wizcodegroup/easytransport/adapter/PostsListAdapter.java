@@ -137,7 +137,7 @@ public class PostsListAdapter extends BaseAdapter implements OnClickListener{
 			mActivity.startActivity(mIntent);
 		}else if(v.getId() == holder.shareBtn.getId()){
 			PostsItem item = (PostsItem) v.getTag(R.id.TAG_OBJECT);
-			//NetworkImageView postImage = (NetworkImageView) v.getTag(R.id.TAG_VIEW);
+			NetworkImageView postImage = (NetworkImageView) v.getTag(R.id.TAG_VIEW);
 			if(!TextUtils.isEmpty(item.getStatus()) && item.getImge() == null){
 				mIntent = new Intent(Intent.ACTION_SEND);
 				mIntent.setType("text/plain");
